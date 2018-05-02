@@ -1,0 +1,28 @@
+{
+  "name": "jekyll-webpack-react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bundle.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/allizad/jekyll-webpack.git"
+  },
+  "keywords": [
+    "jekyll",
+    "webpack"
+  ],
+  "author": "Allison Zadrozny",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/allizad/jekyll-webpack/issues"
+  },
+  "homepage": "https://github.com/allizad/jekyll-webpack#readme",
+  "dependencies": {
+    "bootstrap": "^4.1.1",
+    "fullpage.js": "^2.9.7",
+    "popper.js": "^1.14.3"
+  }
+}
