@@ -2,9 +2,10 @@
 $(function() {
   $('#fullpage').fullpage({
     verticalCentered: false,
-    navigation: true,
+    navigation: false,
     anchors: anchors,
     menu: '#menu',
-    continuousHorizontal: true
+    controlArrows: false,
+    responsiveWidth: 1100
   });
 });
