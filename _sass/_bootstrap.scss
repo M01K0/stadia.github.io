@@ -1,3 +1,4 @@
+@charset "utf-8";
 $theme-colors: (
   primary: #007bff,
   secondary: #868e96,
@@ -9,5 +10,4 @@ $theme-colors: (
   dark: #343a40
 ) !default;
 
-@import
-"bootstrap/bootstrap"
+@import "bootstrap/bootstrap"

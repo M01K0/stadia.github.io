@@ -3,19 +3,15 @@
   "version": "1.0.0",
   "description": "",
   "main": "bundle.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/allizad/jekyll-webpack.git"
   },
   "keywords": [
-    "jekyll",
-    "webpack"
+    "jekyll"
   ],
   "author": "Allison Zadrozny",
-  "license": "ISC",
+  "license": "NONE",
   "bugs": {
     "url": "https://github.com/allizad/jekyll-webpack/issues"
   },

@@ -4,7 +4,6 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarCollapse">
     <ul class="navbar-nav mx-auto" id="menu">
-      <a class="navbar-brand" href="#">{{site.title}}</a>
       {% for tab in site.tabs %}
         {% capture id %}{{ tab.id | remove:'/' | remove:'tabs' | downcase }}{% endcapture %}
         <li class="nav-item" data-menuanchor="{{id}}">

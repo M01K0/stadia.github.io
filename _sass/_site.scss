@@ -1,3 +1,4 @@
+@charset "utf-8";
 .metalic-gradient {
   background: #abbaab;
   background: -webkit-linear-gradient(to bottom, #ffffff, #abbaab);
@@ -14,6 +15,12 @@
   background: #4776E6;
   background: -webkit-linear-gradient(to left, #8E54E9, #4776E6);
   background: linear-gradient(to left, #8E54E9, #4776E6);
+}
+
+.default-gradient {
+  background: #F0D9FF;
+  background: -webkit-linear-gradient(to left, #8E54E9, #F0D9FF);
+  background: linear-gradient(to left, #8E54E9, #F0D9FF);
 }
 
 .tab-base {
