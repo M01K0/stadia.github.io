@@ -5,7 +5,12 @@ class: default-gradient
 
 <div class="container">
   <div class="inner cover">
-		<div class="slide">{% asset 180427_01.jpg !integrity %}</div>
+		<div class="slide">
+      {% asset 180427_01_1.jpg
+      srcset:width="180427_01_1.jpg 320w"
+      srcset:width="180427_01_2.jpg 640w"
+      srcset:width="180427_01_3.jpg 1280w"
+        %}</div>
 		<div class="slide">{% asset 180427_02.jpg !integrity %}</div>
 		<div class="slide">{% asset 180427_03.jpg !integrity %}</div>
   </div>
