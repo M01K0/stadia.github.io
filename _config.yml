@@ -45,6 +45,7 @@ collections:
 
 plugins:
   - jekyll-assets
+  - autoprefixer-rails
 
 assets:
   gzip: true

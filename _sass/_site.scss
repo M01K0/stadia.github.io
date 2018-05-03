@@ -1,4 +1,11 @@
 @charset "utf-8";
+
+$enable-flex: true;
+$enable-rounded: false;
+$enable-shadows: false;
+$enable-gradients: false;
+$enable-transitions: true;
+
 .metalic-gradient {
   background: #abbaab;
   background: -webkit-linear-gradient(to bottom, #ffffff, #abbaab);
