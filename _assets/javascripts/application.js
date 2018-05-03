@@ -1,5 +1,4 @@
-//= require bootstrap.min
-
+//= require_self
 $(function() {
   $('#fullpage').fullpage({
     verticalCentered: false,
