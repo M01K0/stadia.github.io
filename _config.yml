@@ -30,6 +30,9 @@ markdown: kramdown
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
 exclude:
+  - .travis.yml
+  - bin/*
+  - circle.yml
   - Gemfile
   - Gemfile.lock
   - node_modules
@@ -37,6 +40,9 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+  - package.json
+  - README.md
+  - yarn.lock
 
 highlighter: rouge
 collections:
@@ -45,7 +51,7 @@ collections:
 
 plugins:
   - jekyll-assets
-  - bootstrap
+  - jekyll-sitemap
 
 assets:
   gzip: true
@@ -54,8 +60,17 @@ assets:
     - _assets/fonts
     - _assets/images
     - _assets/javascript
+    - _assets/javascripts
+    - _assets/stylesheets
     - _assets/video
+    - _assets/yarn
+  plugins:
+    css: { autoprefixer: {}}
+    img: { optim: {}}
+  source_maps: false
   autoprefixer:
     browsers:
       - "last 2 versions"
       - "IE > 9"
+
+permalink: pretty
