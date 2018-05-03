@@ -45,14 +45,17 @@ collections:
 
 plugins:
   - jekyll-assets
-  - autoprefixer-rails
+  - bootstrap
 
 assets:
   gzip: true
-  precompile:
-    - _sass/bootstrap
   sources:
-    - css
-    - images
-    - js
-    - _sass
+    - _assets/css
+    - _assets/fonts
+    - _assets/images
+    - _assets/javascript
+    - _assets/video
+  autoprefixer:
+    browsers:
+      - "last 2 versions"
+      - "IE > 9"

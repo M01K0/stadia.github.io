@@ -10,6 +10,10 @@ GEM
       public_suffix (>= 2.0.2, < 4.0)
     autoprefixer-rails (8.4.1)
       execjs
+    bootstrap (4.1.1)
+      autoprefixer-rails (>= 6.0.3)
+      popper_js (>= 1.12.9, < 2)
+      sass (>= 3.5.2)
     colorator (1.1.0)
     concurrent-ruby (1.0.5)
     em-websocket (0.5.1)
@@ -71,6 +75,7 @@ GEM
       mini_portile2 (~> 2.3.0)
     pathutil (0.16.1)
       forwardable-extended (~> 2.6)
+    popper_js (1.12.9)
     public_suffix (3.0.2)
     rack (2.0.5)
     rb-fsevent (0.10.3)
@@ -96,6 +101,7 @@ PLATFORMS
 
 DEPENDENCIES
   autoprefixer-rails
+  bootstrap (~> 4.1.1)
   jekyll (~> 3.8.1)
   jekyll-assets
   tzinfo-data
