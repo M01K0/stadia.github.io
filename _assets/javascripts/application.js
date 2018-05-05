@@ -1,11 +1,12 @@
 //= require_self
+
 $(function() {
   $('#fullpage').fullpage({
     verticalCentered: false,
-    navigation: false,
     anchors: anchors,
     menu: '#menu',
+    navigation: true,
     controlArrows: false,
-    responsiveWidth: 1100
+    'css3': true
   });
 });

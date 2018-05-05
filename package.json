@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "kick",
   "dependencies": {
     "bootstrap": "^4.1.1",
     "fullpage.js": "^2.9.7"

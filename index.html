@@ -1,20 +1,40 @@
 ---
 ---
-<!DOCTYPE html>
-<html dir="ltr" lang="en">
+<!doctype html>
+<html lang="ko">
 {% include head.html %}
 <body>
-{% include header.html %}
-
-<div id="fullpage">
-  {% for tab in site.tabs %}
-    {% capture id %}{{ tab.id | remove:'/' | remove:'tabs' | downcase }}{% endcapture %}
-    <div class="section tab-base {{tab.class}}">
-      {{ tab.content }}
+  <!--[if lt IE 8]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong>
+      browser. Please <a href="http://browsehappy.com/">upgrade your browser</a>
+      to improve your experience.</p>
+  <![endif]-->
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto nav-pills nav-fill" id="menu">
+        {% for section in site.sections %}
+            {% capture id %}{{ section.id | remove:'/' | remove:'sections' | downcase }}{% endcapture %}
+            <li class="nav-item" data-menuanchor="{{id}}">
+              <a class="nav-link" href="#{{id}}">{{section.title}}</a>
+            </li>
+        {% endfor %}
+      </ul>
     </div>
-  {% endfor %}
-</div>
+  </nav>
 
-{% include js_files.html %}
+  <main role="main" id="fullpage">
+    {% for section in site.sections %}
+      {% capture id %}{{ section.id | remove:'/' | remove:'sections' | downcase }}{% endcapture %}
+      <section class="section {{section.class}} {{section.section_id}}" id="{{section.section_id}}">
+        <div class="container">
+          {{ section.content }}
+        </div>
+      </section>
+    {% endfor %}
+  </main>
+  {% include javascripts.html %}
 </body>
 </html>
