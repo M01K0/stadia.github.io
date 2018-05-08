@@ -1,7 +1,7 @@
 //= require tether/dist/js/tether
 //= require bootstrap/dist/js/bootstrap
 //= require smoothscroll/smoothscroll
-//= require jquery-dropdown/jquery-dropdown
+//= require dropdown/script.min
 //= require jquery-touchswipe/jquery.touchSwipe
 //= require jarallax/dist/jarallax
 //= require countdown/jquery.countdown.min
