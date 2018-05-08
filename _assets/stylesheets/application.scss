@@ -16,3 +16,14 @@ body { font-family: 'Nanum Gothic', 'Noto Sans', sans-serif; }
   transition: none;
   min-height: 77px;
 }
+
+.cid-qRndRlejLh .image_wrapper {
+  height: 500px;
+  width: 100%;
+  position: relative;
+  display: inline-block;
+}
+.cid-qRndRlejLh .image_wrapper img {
+  width: auto !important;
+  height: 100%;
+}

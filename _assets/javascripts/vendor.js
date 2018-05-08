@@ -7,5 +7,5 @@
 //= require countdown/jquery.countdown.min
 //= require jquery.mb.ytplayer/dist/jquery.mb.YTPlayer
 //= require jquery.mb.vimeo_player/dist/jquery.mb.vimeo_player
-//= require social-likes/dist/social-likes.min
-//= require bootstrap-carousel-swipe/carousel-swipe
+
+//= require bootstrapcarouselswipe/bootstrap-carousel-swipe
