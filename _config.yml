@@ -13,6 +13,8 @@ assets:
     - _assets/javascripts
     - _assets/stylesheets
     - _assets/yarn
+    - _assets/fonts
+    - _assets/images
   autoprefixer:
     browsers:
     - "last 2 versions"

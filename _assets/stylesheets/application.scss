@@ -1,69 +1,18 @@
 @charset "utf-8";
+@import 'tether/src/css/tether';
 @import 'bootstrap/scss/bootstrap';
+@import 'bootstrap/scss/bootstrap-grid';
+@import 'bootstrap/scss/bootstrap-reboot';
 
-$enable-flex: true;
-$enable-rounded: false;
-$enable-shadows: false;
-$enable-gradients: true;
-$enable-transitions: true;
+body { font-family: 'Nanum Gothic', 'Noto Sans', sans-serif; }
 
-$theme-colors: (
-  primary: #007bff,
-  secondary: #868e96,
-  success: #28a745,
-  info: #17a2b8,
-  warning: #ffc107,
-  danger: #dc3545,
-  light: #f8f9fa,
-  dark: #343a40
-) !default;
-
-.default-gradient {
-  background: #F0D9FF;
-  background: -webkit-linear-gradient(to left, #8E54E9, #F0D9FF);
-  background: linear-gradient(to left, #8E54E9, #F0D9FF);
+.cid-qRncmw83Et {
+  background-image: asset_url("intro.jpg");
 }
 
-.metalic-gradient {
-  background: #abbaab;
-  background: -webkit-linear-gradient(to bottom, #ffffff, #abbaab);
-  background: linear-gradient(to bottom, #ffffff, #abbaab);
-}
-
-.cloud-gradient {
-  background: #ECE9E6;
-  background: -webkit-linear-gradient(to left, #FFFFFF, #ECE9E6);
-  background: linear-gradient(to left, #FFFFFF, #ECE9E6);
-}
-
-.violet-gradient {
-  background: #4776E6;
-  background: -webkit-linear-gradient(to left, #8E54E9, #4776E6);
-  background: linear-gradient(to left, #8E54E9, #4776E6);
-}
-
-body { font-family: 'Nanum Gothic', 'Noto Sans', sans-serif;
-color: #333; }
-a { }
-small {color: rgba(255,255,255,0.75);}
-section {
-}
-#intro {
-	background-size: cover;
-  background-image: url(/assets/bg_01-95542e3518cd68f6bc0e3dde2dfb7b39e6b0fa8c2b3977dbc58ab271a3a13423.jpg);
-}
-#photos {
-  img {
-    filter: gray; /* IE6-9 */
-    -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
-      -webkit-box-shadow: 0px 2px 6px 2px rgba(0,0,0,0.75);
-      -moz-box-shadow: 0px 2px 6px 2px rgba(0,0,0,0.75);
-      box-shadow: 0px 2px 6px 2px rgba(0,0,0,0.75);
-      margin-bottom:20px;
-  }
-
-  img:hover {
-    filter: none; /* IE6-9 */
-    -webkit-filter: grayscale(0); /* Google Chrome, Safari 6+ & Opera 15+ */
-  }  
+.cid-qRncmvxCF9 .navbar {
+  padding: .5rem 0;
+  background: #333333;
+  transition: none;
+  min-height: 77px;
 }
