@@ -2,9 +2,7 @@
   "name": "wedding",
   "dependencies": {
     "bootstrap": "^4.1.1",
-    "dropdown": "^0.2.0",
     "jarallax": "^1.10.3",
-    "jquery-dropdown": "^1.0.0",
     "jquery-touchswipe": "^1.6.18",
     "jquery.mb.vimeo_player": "^1.1.2",
     "jquery.mb.ytplayer": "^3.1.5",
