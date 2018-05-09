@@ -4,16 +4,15 @@
 body { font-family: 'Nanum Gothic', 'Noto Sans', sans-serif; }
 
 .cid-qRncmw83Et {
-  background-image: asset_url("intro.jpg");
+  background-image: asset_url("intro_s.jpg");
 }
-
-.cid-qRndRlejLh .image_wrapper {
-  height: 500px;
-  width: 100%;
-  position: relative;
-  display: inline-block;
+@media (max-width: 640px) {
+  .cid-qRncmw83Et {
+    background-image: asset_url("intro_m.jpg");
+  }
 }
-.cid-qRndRlejLh .image_wrapper img {
-  width: auto !important;
-  height: 100%;
+@media (min-width: 641px) {
+  .cid-qRncmw83Et {
+    background-image: asset_url("intro_l.jpg");
+  }
 }

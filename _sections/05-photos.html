@@ -6,7 +6,7 @@ title: 사진
       <div class="content-slider-wrap">
           <div>
             <div class="mbr-slider slide carousel" data-pause="true" data-keyboard="false" data-ride="false" data-interval="false">
-            {% assign photos = 'photos/180427_01.jpg,photos/180427_02.jpg,photos/180427_03.jpg,photos/180427_04.jpg,photos/180427_05.jpg,photos/180427_06.jpg,photos/180427_07.jpg,photos/180427_08.jpg,photos/180427_09.jpg,photos/180427_10.jpg,photos/180427_11.jpg' | split: "," %}
+            {% assign photos = 'photos/180427_01,photos/180427_02,photos/180427_03,photos/180427_04,photos/180427_05,photos/180427_06,photos/180427_07,photos/180427_08,photos/180427_09,photos/180427_10,photos/180427_11' | split: "," %}
             {% assign active = 'active' %}
             <ol class="carousel-indicators">
               {% assign count = 0 %}
@@ -21,13 +21,15 @@ title: 사진
               {% for item in photos %}
                 <div class="carousel-item slider-fullscreen-image {{active}}" data-bg-video-slide="false">
                   <div class="container container-slide">
-                    <div class="image_wrapper">
-                      {% asset {{item}} @pic
-                        srcset:max-width="960 3x"
-                        srcset:max-width="640 2x"
-                        srcset:max-width="320 1x"
-                        %}
-                    </div>
+                    <!-- div class="image_wrapper"-->
+                      <picture>
+                        <source media="(min-width: 961px)" srcset="{% asset '{{item}}'.jpg @path %} 1208w">
+                        <source media="(min-width: 641px)" srcset="{% asset '{{item}}'_3x.jpg @path %} 960w">
+                        <source media="(min-width: 321px)" srcset="{% asset '{{item}}'_m.jpg @path %} 640x">
+                        <img src="{% asset '{{item}}'_s.jpg @path %}"
+                          srcset="{% asset '{{item}}'_s.jpg @path %} 1x, {% asset '{{item}}'_m.jpg @path %} 2x, {% asset '{{item}}'_3x.jpg @path %} 3x, {% asset '{{item}}'.jpg @path %} 4x">
+                      </picture>
+                    <!--/div-->
                   </div>
                 </div>
               {% assign active = '' %}
