@@ -2,7 +2,6 @@
 @import url(//fonts.googleapis.com/css?family=Nanum+Gothic:300,400,700|Noto+Sans:300,400,700&subset=korean);
 
 body { font-family: 'Nanum Gothic', 'Noto Sans', sans-serif; }
-
 .cid-qRncmw83Et {
   background-image: asset_url("intro_s.jpg");
 }
@@ -14,5 +13,29 @@ body { font-family: 'Nanum Gothic', 'Noto Sans', sans-serif; }
 @media (min-width: 641px) {
   .cid-qRncmw83Et {
     background-image: asset_url("intro_l.jpg");
+  }
+}
+// .cid-qRndRlejLh .content-slider-wrap {
+//     width: 80%;
+// }
+@media (max-width: 640px) {
+  .cid-qRndRlejLh .image_wrapper {
+      height: 479px;
+      display: contents;
+  }
+}
+.cid-qRndRlejLh .mbr-slider .carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border: none;
+}
+.cid-qRndRlejLh .mbr-slider .carousel-indicators li.active,
+.cid-qRndRlejLh .mbr-slider .carousel-indicators li:hover {
+  opacity: .9;
+  background-color: #ff7f9f;
+}
+@media (max-width: 576px) {
+  .cid-qRndRlejLh .mbr-slider .carousel-indicators {
+    display: flex !important;
   }
 }
