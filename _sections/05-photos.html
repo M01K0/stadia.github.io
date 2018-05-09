@@ -6,21 +6,27 @@ title: 사진
       <div class="content-slider-wrap">
           <div>
             <div class="mbr-slider slide carousel" data-pause="true" data-keyboard="false" data-ride="false" data-interval="false">
-            {% assign photos = 'photos/180427_01.jpg,photos/180427_02.jpg,photos/180427_03.jpg,photos/180427_04.jpg,photos/180427_05.jpg,photos/180427_06.jpg,photos/180427_07.jpg,photos/180427_08.jpg,photos/180427_09.jpg,photos/180427_10.jpg' | split: "," %}
+            {% assign photos = 'photos/180427_01.jpg,photos/180427_02.jpg,photos/180427_03.jpg,photos/180427_04.jpg,photos/180427_05.jpg,photos/180427_06.jpg,photos/180427_07.jpg,photos/180427_08.jpg,photos/180427_09.jpg,photos/180427_10.jpg,photos/180427_11.jpg' | split: "," %}
             {% assign active = 'active' %}
             <ol class="carousel-indicators">
+              {% assign count = 0 %}
               {% for item in photos %}
-                <li data-app-prevent-settings="" data-target="#photo" class="{{active}}" data-slide-to="0"></li>
+                <li data-app-prevent-settings="" data-target="#photo" class="{{active}}" data-slide-to="{{count}}"></li>
+                {% assign count = count | plus:1 %}
               {% assign active = '' %}
               {% endfor %}
             </ol>
             <div class="carousel-inner" role="listbox">
               {% assign active = 'active' %}
               {% for item in photos %}
-                <div class="carousel-item slider-fullscreen-image {{active}}" data-bg-video-slide="false" style="background-image: url({% asset '{{item}}' @path %});">
+                <div class="carousel-item slider-fullscreen-image {{active}}" data-bg-video-slide="false">
                   <div class="container container-slide">
                     <div class="image_wrapper">
-                      {% asset '{{item}}' !type %}
+                      {% asset {{item}} @pic
+                        srcset:max-width="960 3x"
+                        srcset:max-width="640 2x"
+                        srcset:max-width="320 1x"
+                        %}
                     </div>
                   </div>
                 </div>
