@@ -1,20 +1,10 @@
 @charset "utf-8";
-@import 'tether/src/css/tether';
-@import 'bootstrap/scss/bootstrap';
-@import 'bootstrap/scss/bootstrap-grid';
-@import 'bootstrap/scss/bootstrap-reboot';
+@import url(//fonts.googleapis.com/css?family=Nanum+Gothic:300,400,700|Noto+Sans:300,400,700&subset=korean);
 
 body { font-family: 'Nanum Gothic', 'Noto Sans', sans-serif; }
 
 .cid-qRncmw83Et {
   background-image: asset_url("intro.jpg");
-}
-
-.cid-qRncmvxCF9 .navbar {
-  padding: .5rem 0;
-  background: #ff7f9f;
-  transition: none;
-  min-height: 77px;
 }
 
 .cid-qRndRlejLh .image_wrapper {
