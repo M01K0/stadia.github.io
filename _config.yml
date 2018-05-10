@@ -19,7 +19,9 @@ assets:
     browsers:
     - "last 2 versions"
     - "IE > 9"
+  gzip: true
   cdn:
+    baseurl: http://cdn.180617.ga
     url: http://cdn.180617.ga
 
 exclude:
