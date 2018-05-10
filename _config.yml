@@ -21,8 +21,7 @@ assets:
     - "IE > 9"
   gzip: true
   cdn:
-    baseurl: http://cdn.180617.ga
-    url: http://cdn.180617.ga
+    url: http://dyta4jk4n9s99.cloudfront.net
 
 exclude:
   - .travis.yml
