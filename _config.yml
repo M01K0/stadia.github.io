@@ -15,6 +15,7 @@ assets:
     - _assets/yarn
     - _assets/fonts
     - _assets/images
+    - _assets/videos
   autoprefixer:
     browsers:
     - "last 2 versions"
