@@ -1,7 +1,6 @@
 {
   "name": "wedding",
   "dependencies": {
-    "@vimeo/player": "^2.6.1",
     "bootstrap": "^4.1.1",
     "jarallax": "^1.10.3",
     "jquery-touchswipe": "^1.6.18",
