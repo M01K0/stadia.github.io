@@ -15,9 +15,9 @@ body { font-family: 'Nanum Gothic', 'Noto Sans', sans-serif; }
     background-image: asset_url("intro_l.jpg");
   }
 }
-// .cid-qRndRlejLh .content-slider-wrap {
-//     width: 80%;
-// }
+#banner {
+  background-image: asset_url("og-image.png");
+}
 @media (max-width: 640px) {
   .cid-qRndRlejLh .image_wrapper {
       height: 479px;
