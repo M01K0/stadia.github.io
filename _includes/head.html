@@ -1,21 +1,29 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>{{ site.name }} | {{ page.title }}</title>
-  <meta name="description" content="{{ page.description }}">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="{% asset logo2.png @path %}" type="image/x-icon">
+  <meta name="description" content="">
+  <title>{{ site.title }}</title>
 
-  <meta property="og:title" content="{{ page.title }}">
+  <meta property="og:title" content="{{ site.title }}">
   <meta property="og:type" content="website">
   <meta property="og:url" content="{{ page.url | absolute_url }}">
   <meta property="og:description" content="{{ page.description }}">
   <meta property="og:site_name" content="{{ site.name }}">
-  <meta property="og:image" content="{{ site.url }}{% asset og-image.jpg @path %}">
+  <meta property="og:image" content="{{ site.url }}{% asset og-image.png @path %}">
 
   <link rel="apple-touch-icon" href="{% asset apple-touch-icon.png @path %}">
 
   <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Nanum+Gothic:300,400,700|Noto+Sans:300,400,700&subset=korean" type="text/css">
-  {% asset application.css %}
+  {% asset mobirise-icons/mobirise-icons.css !type %}
+  {% asset vendor.css !type %}
+  {% asset dropdown/style.css !type %}
+  {% asset socicon/css/styles.css !type %}
+  {% asset theme/style.css !type %}
+  {% asset gallery/style.css !type %}
+  {% asset mobirise/mbr-additional.css !type %}
+  {% asset application.css !type %}
   <script type="text/javascript">
   var anchors = [
     {% for section in site.sections %}
