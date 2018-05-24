@@ -5,12 +5,12 @@ body { font-family: 'Nanum Gothic', 'Noto Sans', sans-serif; }
 .cid-qRncmw83Et {
   background-image: asset_url("intro_s.jpg");
 }
-@media (max-width: 640px) {
+@media screen and (max-width: 640px) {
   .cid-qRncmw83Et {
     background-image: asset_url("intro_m.jpg");
   }
 }
-@media (min-width: 641px) {
+@media screen and (min-width: 641px) {
   .cid-qRncmw83Et {
     background-image: asset_url("intro_l.jpg");
   }
@@ -18,7 +18,7 @@ body { font-family: 'Nanum Gothic', 'Noto Sans', sans-serif; }
 #banner {
   background-image: asset_url("og-image.png");
 }
-@media (max-width: 640px) {
+@media screen and (max-width: 640px) {
   .cid-qRndRlejLh .image_wrapper {
       height: 479px;
       display: contents;
@@ -34,7 +34,7 @@ body { font-family: 'Nanum Gothic', 'Noto Sans', sans-serif; }
   opacity: .9;
   background-color: #ff7f9f;
 }
-@media (max-width: 576px) {
+@media screen and (max-width: 576px) {
   .cid-qRndRlejLh .mbr-slider .carousel-indicators {
     display: flex !important;
   }
