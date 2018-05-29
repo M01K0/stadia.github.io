@@ -6,5 +6,5 @@
 //= require jarallax/dist/jarallax
 //= require countdown/jquery.countdown.min
 //= require jquery.mb.ytplayer/dist/jquery.mb.YTPlayer
-//= require jquery.mb.vimeo_player/dist/jquery.mb.vimeo_player
+//= require jquery.mb.vimeo_player
 //= require bootstrapcarouselswipe/bootstrap-carousel-swipe

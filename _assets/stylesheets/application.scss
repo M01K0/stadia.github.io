@@ -3,17 +3,7 @@
 
 body { font-family: 'Nanum Gothic', 'Noto Sans', sans-serif; }
 .cid-qRncmw83Et {
-  background-image: asset_url("intro_s.jpg");
-}
-@media screen and (max-width: 640px) {
-  .cid-qRncmw83Et {
-    background-image: asset_url("intro_m.jpg");
-  }
-}
-@media screen and (min-width: 641px) {
-  .cid-qRncmw83Et {
-    background-image: asset_url("intro_l.jpg");
-  }
+  background-image: asset_url("intro_l.jpg");
 }
 #banner {
   background-image: asset_url("og-image.jpg");
