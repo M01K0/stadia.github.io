@@ -11,4 +11,3 @@ Thumbs.db
 /.jekyll-cache/
 Gemfile.lock
 yarn.lock
-node_modules/
