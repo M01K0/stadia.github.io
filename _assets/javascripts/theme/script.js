@@ -379,10 +379,11 @@
                                     videoURL: parsedUrl[6],
                                     containment: 'self',
                                     showControls: false,
-                                    mute: true
+                                    mute: false
                                 });
                         }
                     } else if (parsedUrl && /vimeo/g.test(parsedUrl[3])) { // vimeo
+                      if ($.fn.vimeo_player && !$.isMobile()) {
                         var request = new XMLHttpRequest();
                         request.open('GET', 'https://vimeo.com/api/v2/video/' + parsedUrl[6] + '.json', true);
                         request.onreadystatechange = function() {
@@ -401,15 +402,14 @@
                         request.send();
                         request = null;
 
-                        if ($.fn.vimeo_player && !$.isMobile()) {
-                            $('> *:eq(1)', this).before('<div class="mbr-background-video"></div>').prev()
-                                .vimeo_player({
-                                    videoURL: videoURL,
-                                    containment: 'self',
-                                    showControls: false,
-                                    mute: true
-                                });
-                        }
+                        $('> *:eq(1)', this).before('<div class="mbr-background-video"></div>').prev()
+                            .vimeo_player({
+                                videoURL: videoURL,
+                                containment: 'self',
+                                showControls: false,
+                                mute: false
+                            });
+                      }
                     }
                 }
             });
