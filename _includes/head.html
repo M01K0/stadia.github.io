@@ -2,7 +2,6 @@
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-  <link rel="shortcut icon" href="{% asset logo2.png @path %}" type="image/x-icon">
   <meta name="description" content="">
   <title>{{ site.title }}</title>
 
@@ -13,7 +12,24 @@
   <meta property="og:site_name" content="{{ site.name }}">
   <meta property="og:image" content="{% asset og-image.jpg @path %}">
 
-  <link rel="apple-touch-icon" href="{% asset apple-touch-icon.png @path %}">
+  <link rel="shortcut icon" href="{% asset icon/favicon.ico @path %}" />
+  <link rel="apple-touch-icon" sizes="57x57" href="{% asset icon/apple-icon-57x57.png @path %}">
+  <link rel="apple-touch-icon" sizes="60x60" href="{% asset icon/apple-icon-60x60.png @path %}">
+  <link rel="apple-touch-icon" sizes="72x72" href="{% asset icon/apple-icon-72x72.png @path %}">
+  <link rel="apple-touch-icon" sizes="76x76" href="{% asset icon/apple-icon-76x76.png @path %}">
+  <link rel="apple-touch-icon" sizes="114x114" href="{% asset icon/apple-icon-114x114.png @path %}">
+  <link rel="apple-touch-icon" sizes="120x120" href="{% asset icon/apple-icon-120x120.png @path %}">
+  <link rel="apple-touch-icon" sizes="144x144" href="{% asset icon/apple-icon-144x144.png @path %}">
+  <link rel="apple-touch-icon" sizes="152x152" href="{% asset icon/apple-icon-152x152.png @path %}">
+  <link rel="apple-touch-icon" sizes="180x180" href="{% asset icon/apple-icon-180x180.png @path %}">
+  <link rel="icon" type="image/png" sizes="192x192"  href="{% asset icon/android-icon-192x192.png @path %}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{% asset icon/favicon-32x32.png @path %}">
+  <link rel="icon" type="image/png" sizes="96x96" href="{% asset icon/favicon-96x96.png @path %}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{% asset icon/favicon-16x16.png @path %}">
+  <link rel="manifest" href="{% asset icon/manifest.json @path %}">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="{% asset icon/ms-icon-144x144.png @path %}">
+  <meta name="theme-color" content="#ffffff">
 
   <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Nanum+Gothic:300,400,700|Noto+Sans:300,400,700&subset=korean" type="text/css">
   {% asset mobirise-icons/mobirise-icons.css !type %}
