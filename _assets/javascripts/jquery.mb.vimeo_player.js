@@ -168,13 +168,16 @@ var get_vimeo_videoID = function( url ) {
           opacity: 0
         } );
 
-        vimeo_player.playerBox = jQuery( "<iframe/>" ).attr({id: playerID, allow: "autoplay"}).addClass( "playerBox" );
-        option_param = "?background=1";
+        vimeo_player.playerBox = jQuery( "<iframe webkitallowfullscreen mozallowfullscreen />" ).attr({id: playerID, allow: "autoplay; fullscreen"}).addClass( "playerBox" );
+        option_param = "?background=1&title=0";
         if( vimeo_player.opt.mute ) {
           option_param = option_param + "&muted=1"
         }
         if( vimeo_player.opt.autoPlay ) {
           option_param = option_param + "&autoplay=1"
+        }
+        if(vimeo_player.opt.loop) {
+          option_param = option_param + "&loop=1"
         }
         vimeo_player.playerBox.css( {
           position: "absolute",
