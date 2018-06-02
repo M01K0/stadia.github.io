@@ -338,7 +338,7 @@
                       });
                 } else {
                   $('#video').removeClass('mbr-fullscreen').addClass('mbr-section');
-                  var $img = $('<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/269124360?background=1&muted=1&autoplay=1&color=ff9933&title=0&byline=0&portrait=0" allow="autoplay; fullscreen" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>');
+                  var $img = $('<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/269124360?background=1&muted=0&autoplay=1&color=ff9933&title=0&byline=0&portrait=0" allow="autoplay; fullscreen" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>');
                 }
                 $('> *:eq(0)', this).before($img);
 
