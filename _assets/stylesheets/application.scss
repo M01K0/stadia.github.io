@@ -3,10 +3,15 @@
 
 body { font-family: 'Nanum Gothic', 'Noto Sans', sans-serif; }
 .cid-qRncmw83Et {
-  background-image: asset_url("intro_l.jpg");
+
 }
-#banner {
-  background-image: asset_url("og-image.jpg");
+.cid-qRa5AC9b2F {
+  background-image: asset_url("typo_web.png");
+}
+@media screen and (max-width: 600px) {
+  .cid-qRa5AC9b2F {
+      background-image: asset_url("typo_moblie.png");
+  }
 }
 @media screen and (max-width: 640px) {
   .cid-qRndRlejLh .image_wrapper {
@@ -28,4 +33,25 @@ body { font-family: 'Nanum Gothic', 'Noto Sans', sans-serif; }
   .cid-qRndRlejLh .mbr-slider .carousel-indicators {
     display: flex !important;
   }
+}
+.cid-qTP6I8Ni44 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #ffffff;
+}
+.btn {
+  font-weight: 500;
+  border-width: 2px;
+  font-style: normal;
+  letter-spacing: 1px;
+  margin: 0;
+  white-space: normal;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  word-break: break-word;
 }
