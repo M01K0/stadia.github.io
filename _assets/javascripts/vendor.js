@@ -7,3 +7,7 @@
 //= require countdown/jquery.countdown.min
 //= require jquery.mb.vimeo_player
 //= require bootstrapcarouselswipe/bootstrap-carousel-swipe
+//= require masonry/masonry.pkgd.min
+//= require imagesloaded/imagesloaded.pkgd.min
+//= require gallery/player.min
+//= require gallery/script

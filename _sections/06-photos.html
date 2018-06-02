@@ -1,43 +1,62 @@
 ---
 title: 사진
 ---
-<section class="carousel slide cid-qRndRlejLh" data-interval="false" id="photo">
-  <div class="container content-slider">
-      <div class="content-slider-wrap">
+<section class="mbr-gallery mbr-slider-carousel cid-qTP6zyS2c0" id="gallery3-3">
+  <div>
+    <div>
+      <!-- Filter -->
+      <!-- Gallery -->
+      <div class="mbr-gallery-row">
+        <div class="mbr-gallery-layout-default">
           <div>
-            <div class="mbr-slider slide carousel" data-pause="true" data-keyboard="false" data-ride="false" data-interval="false">
-            <!-- {% assign photos = 'photos/180427_01,photos/180427_02,photos/180427_03,photos/180427_04,photos/180427_05,photos/180427_06,photos/180427_07,photos/180427_08,photos/180427_09,photos/180427_10,photos/180427_11' | split: "," %} -->
-            {% assign photos = 'photos/180427_01,photos/180427_02,photos/180427_03,photos/180427_04,photos/180427_05,photos/180427_06,photos/180427_10,photos/180427_11' | split: "," %}
-            {% assign active = 'active' %}
-            <ol class="carousel-indicators">
+            <div>
+              {% assign photos = 'photos/180427_01,photos/180427_02,photos/180427_03,photos/180427_04,photos/180427_05,photos/180427_06,photos/180427_10,photos/180427_11' | split: "," %}
               {% assign count = 0 %}
               {% for item in photos %}
-                <li data-app-prevent-settings="" data-target="#photo" class="{{active}}" data-slide-to="{{count}}"></li>
-                {% assign count = count | plus:1 %}
-              {% assign active = '' %}
-              {% endfor %}
-            </ol>
-            <div class="carousel-inner" role="listbox">
-              {% assign active = 'active' %}
-              {% for item in photos %}
-                <div class="carousel-item slider-fullscreen-image {{active}}" data-bg-video-slide="false">
-                  <div class="container container-slide">
-                    <div class="image_wrapper">
-                      <picture>
-                        <source media="(min-width: 961px)" srcset="{% asset '{{item}}'.jpg @path %} 1208w">
-                        <source media="(min-width: 641px)" srcset="{% asset '{{item}}'_3x.jpg @path %} 960w">
-                        <source media="(max-width: 640px)" srcset="{% asset '{{item}}'_2x.jpg @path %} 640w">
-                        <img src="{% asset '{{item}}'_2x.jpg @path %}"
-                          srcset="{% asset '{{item}}'_2x.jpg @path %} 640w, {% asset '{{item}}'_3x.jpg @path %} 960w, {% asset '{{item}}'.jpg @path %} 1280w">
-                      </picture>
-                    </div>
-                  </div>
+                <div class="mbr-gallery-item mbr-gallery-item--pNaN" data-video-url="false">
+                  <div href="#lb-gallery3-3" data-slide-to="{{count}}" data-toggle="modal">
+                    <img src="{% asset '{{item}}_2x'.jpg @path %}">
+                    <span class="icon-focus"></span></div>
                 </div>
-              {% assign active = '' %}
+                {% assign count = count | plus:1 %}
               {% endfor %}
+            </div>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+      <!-- Lightbox -->
+      <div data-app-prevent-settings="" class="mbr-slider modal fade carousel slide" tabindex="-1" data-keyboard="true" data-interval="false" id="lb-gallery3-3">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              <ol class="carousel-indicators">
+                {% assign count = 0 %}
+                {% assign active = 'active' %}
+                {% for item in photos %}
+                  <li data-app-prevent-settings="" data-target="#lb-gallery3-3" class="{{active}}" data-slide-to="{{count}}"></li>
+                  {% assign count = count | plus:1 %}
+                  {% assign active = '' %}
+                {% endfor %}
+              </ol>
+              <div class="carousel-inner">
+                {% assign active = 'active' %}
+                {% for item in photos %}
+                  <div class="carousel-item {{active}}"><img src="{% asset '{{item}}'.jpg @path %}" alt="" title=""></div>
+                  {% assign active = '' %}
+                {% endfor %}
+              </div>
+              <a class="carousel-control carousel-control-prev" role="button" data-slide="prev" href="#lb-gallery3-3">
+                <span class="mbri-left mbr-iconfont" aria-hidden="true"></span><span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control carousel-control-next" role="button" data-slide="next" href="#lb-gallery3-3">
+                <span class="mbri-right mbr-iconfont" aria-hidden="true"></span><span class="sr-only">Next</span>
+              </a>
+              <a class="close" href="#" role="button" data-dismiss="modal"><span class="sr-only">Close</span></a>
             </div>
           </div>
         </div>
       </div>
+    </div>
   </div>
 </section>

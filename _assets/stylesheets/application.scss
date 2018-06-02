@@ -13,26 +13,10 @@ body { font-family: 'Nanum Gothic', 'Noto Sans', sans-serif; }
       background-image: asset_url("typo_moblie.png");
   }
 }
-@media screen and (max-width: 640px) {
-  .cid-qRndRlejLh .image_wrapper {
-      height: 479px;
-      display: contents;
-  }
-}
-.cid-qRndRlejLh .mbr-slider .carousel-indicators li {
-  width: 10px;
-  height: 10px;
-  border: none;
-}
-.cid-qRndRlejLh .mbr-slider .carousel-indicators li.active,
-.cid-qRndRlejLh .mbr-slider .carousel-indicators li:hover {
+.mbr-slider .carousel-indicators .active, .mbr-slider .carousel-indicators li.active,
+.mbr-slider .carousel-indicators .active, .mbr-slider .carousel-indicators li:hover {
   opacity: .9;
   background-color: #ff7f9f;
-}
-@media screen and (max-width: 576px) {
-  .cid-qRndRlejLh .mbr-slider .carousel-indicators {
-    display: flex !important;
-  }
 }
 .cid-qTP6I8Ni44 {
     padding-top: 40px;
