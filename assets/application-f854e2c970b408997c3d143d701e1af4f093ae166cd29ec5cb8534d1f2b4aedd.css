@@ -1,0 +1,33 @@
+@import url(//fonts.googleapis.com/css?family=Nanum+Gothic:300,400,700|Noto+Sans:300,400,700&subset=korean);
+body {
+  font-family: 'Nanum Gothic', 'Noto Sans', sans-serif; }
+
+.cid-qRa5AC9b2F {
+  background-image: url(/assets/typo_web-e68754ccc96b307a20e49d4bfa3151e550e50fef93711713a74a57d7eac3d026.png); }
+
+@media screen and (max-width: 600px) {
+  .cid-qRa5AC9b2F {
+    background-image: url(/assets/typo_moblie-0344b3718163e9b6cf70b3b7db35da7efd4060a809aed33ee98249986aa0902a.png); } }
+.mbr-slider .carousel-indicators .active, .mbr-slider .carousel-indicators li.active,
+.mbr-slider .carousel-indicators .active, .mbr-slider .carousel-indicators li:hover {
+  opacity: .9;
+  background-color: #ff7f9f; }
+
+.cid-qTP6I8Ni44 {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #ffffff; }
+
+.btn {
+  font-weight: 500;
+  border-width: 2px;
+  font-style: normal;
+  letter-spacing: 1px;
+  margin: 0;
+  white-space: normal;
+  transition: all 0.3s ease-in-out;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  word-break: break-word; }
